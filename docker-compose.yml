@@ -45,10 +45,8 @@ services:
       # Enable console pipe for commands
       CREATE_CONSOLE_IN_PIPE: "true"
 
-      # Geyser/Floodgate for Bedrock support (downloaded separately)
-      PLUGINS: |
-        https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
-        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
+      # Plugins are managed manually in minecraft-data/plugins/
+      # Installed: BedWars, BattleArena, EssentialsX, Multiverse-Core, Terra, Geyser, Floodgate, Vault
 
     volumes:
       - ./minecraft-data:/data
