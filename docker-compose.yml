@@ -13,14 +13,14 @@ services:
 
       # Server settings
       SERVER_NAME: "Kids Minigames Server"
-      MOTD: "BedWars - SkyWars - Arcade Games!"
+      MOTD: "Waihi Beach NZ - Minigames - Adventure!"
       MAX_PLAYERS: 20
 
       # Difficulty and game mode
       DIFFICULTY: "normal"
-      MODE: "adventure"
+      MODE: "survival"
 
-      # World settings
+      # World settings - default world, waihi_beach imported via Multiverse
       LEVEL: "world"
 
       # Offline mode - allows multiple users without login

@@ -105,6 +105,25 @@ BedWars arenas need to be created by an admin in-game:
 
 4. Save with `/bw admin save <arena-name>`
 
+## Waihi Beach World (Real Terrain!)
+
+The server includes a special world based on **real terrain data** from Waihi Beach and Bowentown, New Zealand! The terrain was generated from actual elevation data, so you can explore a Minecraft version of the real coastline.
+
+### Accessing Waihi Beach World
+```bash
+# Teleport to Waihi Beach
+/warp wahibeach
+
+# Or use Multiverse
+/mv tp waihi_beach
+```
+
+### World Details
+- **Coverage**: ~5.3km x 6.7km of real Waihi Beach/Bowentown terrain
+- **Coordinates**: -37.44 to -37.38 latitude, 175.92 to 175.98 longitude
+- **Features**: Real coastline, hills, and elevation from OpenStreetMap + AWS Terrain Tiles
+- **New chunks**: Generated using Terra for seamless coastal terrain
+
 ## Creating a Terra World
 
 To create a beautiful custom-generated world:
