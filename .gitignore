@@ -1,0 +1,31 @@
+# Minecraft server data
+minecraft-data/
+
+# World files
+world/
+world_nether/
+world_the_end/
+
+# Logs
+*.log
+logs/
+
+# Crash reports
+crash-reports/
+
+# Backups
+*.backup
+backups/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
