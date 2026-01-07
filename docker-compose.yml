@@ -1,0 +1,55 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+      - "19132:19132/udp"  # Bedrock port
+    environment:
+      # Server basics
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VERSION: "1.20.4"
+
+      # Server settings
+      SERVER_NAME: "Kids Minigames Server"
+      MOTD: "BedWars - SkyWars - Arcade Games!"
+      MAX_PLAYERS: 20
+
+      # Difficulty and game mode
+      DIFFICULTY: "normal"
+      MODE: "adventure"
+
+      # World settings
+      LEVEL: "world"
+
+      # Offline mode - allows multiple users without login
+      ONLINE_MODE: "false"
+
+      # Minigames need PVP and command blocks
+      ENABLE_COMMAND_BLOCK: "true"
+      SPAWN_PROTECTION: 0
+      PVP: "true"
+
+      # Performance settings
+      MEMORY: "3G"
+      MAX_MEMORY: "5G"
+
+      # Disable whitelist for offline mode
+      ENABLE_WHITELIST: "false"
+      ENFORCE_WHITELIST: "false"
+
+      # View distance
+      VIEW_DISTANCE: 10
+
+      # Enable console pipe for commands
+      CREATE_CONSOLE_IN_PIPE: "true"
+
+      # Plugins are managed manually in minecraft-data/plugins/
+      # Installed: BedWars, BattleArena, EssentialsX, Multiverse-Core, Terra, Geyser, Floodgate, Vault
+
+    volumes:
+      - ./minecraft-data:/data
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
