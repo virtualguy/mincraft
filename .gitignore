@@ -13,10 +13,6 @@ logs/
 # Crash reports
 crash-reports/
 
-# Backups
-*.backup
-backups/
-
 # IDE
 .idea/
 .vscode/
@@ -29,3 +25,11 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Build tools
+tools/
+arnis-tile-cache/
+.venv/
+
+# Keep backups (tracked via LFS)
+# backups/*.tar.gz is tracked by Git LFS
